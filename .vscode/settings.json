@@ -1,0 +1,8 @@
+ 
+{
+  "tslint.packageManager": "yarn",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+  },
+  "editor.tabSize": 2
+}

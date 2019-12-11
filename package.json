@@ -1,0 +1,34 @@
+{
+  "name": "gestion-salle-polyvalente",
+  "version": "0.1.0",
+  "description": "De la merde en barquette",
+  "main": "index.js",
+  "author": "lpenaud",
+  "license": "MIT",
+  "scripts": {
+    "serve": "ts-node src/index.ts",
+    "watch": "nodemon --watch src -e ts --exec \"yarn serve\"",
+    "build": "tsc",
+    "start": "node build/index.js",
+    "lint": "tslint -p tslint.json"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.3.5",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.0.42",
+    "@types/koa-static": "^4.0.1",
+    "@vue/cli": "^4.1.1",
+    "nodemon": "^2.0.1",
+    "ts-node": "^8.5.4",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "@types/koa": "^2.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
+  }
+}
