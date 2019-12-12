@@ -9,7 +9,7 @@
     "serve": "ts-node src/index.ts",
     "watch": "nodemon --watch src -e ts --exec \"yarn serve\"",
     "build": "tsc",
-    "start": "git submodule init && git submodule update && tsc && node build/index.js",
+    "start": "git clone --recurse-submodules https://github.com/KHEMM-TL/api-multi-purpose-management && tsc && node build/index.js",
     "lint": "tslint -p tslint.json"
   },
   "devDependencies": {
