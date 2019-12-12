@@ -13,7 +13,7 @@ app
   .use(serve(path.join(process.cwd(), "client/dist"), { index: "index.html" }));
 
 const server = http.createServer(app.callback());
-const port = process.env.PORT || 3000;
+const port = Number(process.env.PORT) || 3000;
 const hostname = process.env.HOSTNAME || "localhost";
 
 server.listen(port, hostname, () => {
