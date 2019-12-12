@@ -10,6 +10,7 @@
     "watch": "nodemon --watch src -e ts --exec \"yarn serve\"",
     "build": "tsc",
     "start": "chmod +x ./start.sh && ./start.sh",
+    "simple": "node build/index.js",
     "lint": "tslint -p tslint.json"
   },
   "devDependencies": {
