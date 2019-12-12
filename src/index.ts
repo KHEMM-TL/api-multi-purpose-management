@@ -13,7 +13,9 @@ app
   .use(serve(path.join(process.cwd(), "client/dist"), { index: "index.html" }));
 
 const server = http.createServer(app.callback());
+const port = process.env.PORT || 3000;
+const hostname = process.env.HOSTNAME || "localhost";
 
-server.listen(3000, "localhost", () => {
-  console.log("http://localhost:3000");
+server.listen(port, hostname, () => {
+  console.log(`"http://${hostname}:${port}`);
 });
