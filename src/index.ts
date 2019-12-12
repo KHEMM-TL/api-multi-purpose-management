@@ -17,5 +17,5 @@ const port = Number(process.env.PORT) || 3000;
 const hostname = process.env.HOSTNAME || "localhost";
 
 server.listen(port, hostname, () => {
-  console.log(`"http://${hostname}:${port}`);
+  console.log(`http://${hostname}:${port}`);
 });
