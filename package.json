@@ -9,7 +9,7 @@
     "serve": "ts-node src/index.ts",
     "watch": "nodemon --watch src -e ts --exec \"yarn serve\"",
     "build": "tsc",
-    "start": "node build/index.js",
+    "start": "tsc && node build/index.js",
     "lint": "tslint -p tslint.json"
   },
   "devDependencies": {
